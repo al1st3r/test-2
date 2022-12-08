@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="title" content="Sitename"/>
+  <meta name="Generator" content="Drupal 8 (https://www.drupal.org)"/>
+  <meta name="MobileOptimized" content="width"/>
+  <meta name="HandheldFriendly" content="true"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+  <link rel="shortcut icon" href="../favicon.ico" type="image/vnd.microsoft.icon"/>
+  <title>{{ title | default('Page title') | title }} | Sitename</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- Drupal files, need only for slice -->
+  <script type="application/json" data-drupal-selector="drupal-settings-json">
+    {
+      "path": {
+        "baseUrl": "/",
+        "scriptPath": null,
+        "pathPrefix": "",
+        "currentPath": "",
+        "currentPathIsAdmin": false,
+        "isFront": true,
+        "currentLanguage": "en"
+      },
+      "pluralDelimiter": "\u0003",
+      "ajaxPageState": {
+        "libraries": "",
+        "theme": "common",
+        "theme_token": null
+      },
+      "ajaxTrustedUrl": {},
+      "views": {
+        "ajax_path": "/views/ajax",
+        "ajaxViews": {}
+      },
+      "user": {
+        "uid": 0
+      }
+    }
+  </script>
+
+  <!-- Libraries -->
+  <script src="assets/libs/js-polyfills/polyfill.js"></script>
+  <script src="assets/libs/object-fit-images/dist/ofi.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <!-- End libraries -->
+
+  <!-- Custom files -->
+
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/components.js"></script>
+
+  <!-- End custom files -->
+</head>
+{% block body %}
+<body>
+  <div class="page">
+    {% block page %}{% endblock %}
+  </div>
+</body>
+{% endblock %}
+</html>

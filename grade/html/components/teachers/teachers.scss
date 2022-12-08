@@ -1,0 +1,37 @@
+.teachers {
+  &__title {
+    margin-bottom: 120px;
+  }
+
+  &__items {
+    display: flex;
+  }
+
+  &__item {
+    flex-basis: calc(100% / 3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__img {
+    margin-bottom: 40px;
+
+    img {
+      border-radius: 50%;
+      max-width: 190px;
+      width: 100%;
+      aspect-ratio: 1/1;
+    }
+  }
+
+  &__name {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+
+  &__job {
+    margin-bottom: 30px;
+  }
+}

@@ -1,0 +1,27 @@
+.subscription {
+  height: 44px;
+  width: 100%;
+  display: flex;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.25);
+  max-width: 500px;
+  margin: 0 auto;
+
+  input {
+    background: transparent;
+    border: none;
+    outline: none;
+    padding-left: 30px;
+    color: #fff;
+
+    &::-webkit-input-placeholder {
+      color: #fff;
+      font-size: 14px;
+      opacity: 0.8;
+    }
+  }
+
+  button {
+    margin-left: auto;
+  }
+}

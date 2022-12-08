@@ -1,0 +1,80 @@
+.program {
+  padding: 100px 0;
+
+  &__title {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  &__description {
+    text-align: center;
+    max-width: 420px;
+    margin: 0 auto;
+    opacity: 0.5;
+    margin-bottom: 80px;
+  }
+
+  &__items {
+    max-width: 750px;
+    margin: 0 auto;
+    position: relative;
+    padding: 10px 0;
+
+    &:after {
+      height: 100%;
+      width: 6px;
+      background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+      position: absolute;
+      content: '';
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__item {
+    max-width: 230px;
+    position: relative;
+
+    &:nth-child(odd) {
+      text-align: right;
+      margin-left: 60px;
+
+      &:after {
+        content: '';
+        position: absolute;
+        background: #fff;
+        opacity: 0.3;
+        width: 40px;
+        height: 1px;
+        right: -82px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+
+    &:nth-child(even) {
+      text-align: left;
+      margin-left: auto;
+      margin-right: 60px;
+
+      &:after {
+        content: '';
+        position: absolute;
+        background: #fff;
+        opacity: 0.3;
+        width: 40px;
+        height: 1px;
+        left: -82px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  &__weak {
+    opacity: 0.5;
+    margin-bottom: 15px;
+  }
+
+}

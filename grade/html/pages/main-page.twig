@@ -1,0 +1,14 @@
+{% extends "../components/page-template/page-template--layout-one.twig" %}
+
+{% set title = 'news' %}
+{% block title %} {{ title }} | Sitename {% endblock %}
+
+{% set region_layout_main %}
+    {% include "../components/hero/hero.twig" %}
+    {% include "../components/about/about.twig" %}
+    {% include "../components/start/start.twig" %}
+    {% include "../components/job-now/job-now.twig" %}
+    {% include "../components/partners/partners.twig" %}
+    {% include "../components/program/program.twig" %}
+    {% include "../components/teachers/teachers.twig" %}
+{% endset %}
